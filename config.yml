@@ -3,14 +3,14 @@ description: To track updates to Teaching Databases
 template:
   repo: databases-template
   name: databases
+  description: Teaching Databases
 before:
   - type: createIssue
     title: Welcome!
     body: new-issue.md
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: New step
     actions:
-      - type: closeIssue
+      - type: createIssue
+        title: A new issue
+        body: a-response-file.md
